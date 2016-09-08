@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="autoLayout" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="W5R-kT-c1l"/>
+                        <viewControllerLayoutGuide type="bottom" id="odZ-XD-FrS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Etn-ex-xir">
+                                <rect key="frame" x="20" y="40" width="560" height="225"/>
+                                <color key="backgroundColor" red="0.75937933614714048" green="1" blue="0.30566049303155995" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BYk-Qn-ipV">
+                                <rect key="frame" x="277" y="285" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jiz-zA-vuD">
+                                <rect key="frame" x="198" y="335" width="205" height="205"/>
+                                <color key="backgroundColor" red="1" green="0.3976992641504713" blue="0.75681095290268519" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="jiz-zA-vuD" secondAttribute="height" multiplier="1:1" id="tLp-OU-hGX"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="BYk-Qn-ipV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3i9-0K-4gD"/>
+                            <constraint firstItem="jiz-zA-vuD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8RI-p8-f2T"/>
+                            <constraint firstItem="jiz-zA-vuD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CDE-zf-g1e"/>
+                            <constraint firstItem="Etn-ex-xir" firstAttribute="top" secondItem="W5R-kT-c1l" secondAttribute="bottom" constant="20" id="KbR-lO-IgU"/>
+                            <constraint firstItem="jiz-zA-vuD" firstAttribute="top" secondItem="BYk-Qn-ipV" secondAttribute="bottom" constant="20" id="P50-TU-znC"/>
+                            <constraint firstItem="odZ-XD-FrS" firstAttribute="top" secondItem="jiz-zA-vuD" secondAttribute="bottom" constant="60" id="S4H-au-5FO"/>
+                            <constraint firstItem="jiz-zA-vuD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZCl-2g-v1U"/>
+                            <constraint firstItem="Etn-ex-xir" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ibV-Ec-VY7"/>
+                            <constraint firstItem="BYk-Qn-ipV" firstAttribute="top" secondItem="Etn-ex-xir" secondAttribute="bottom" constant="20" id="jdr-p9-IRD"/>
+                            <constraint firstItem="Etn-ex-xir" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="ohd-kD-H45"/>
+                            <constraint firstItem="Etn-ex-xir" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="r4b-UI-hOr"/>
+                            <constraint firstItem="BYk-Qn-ipV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="rf1-wt-1i9"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="8RI-p8-f2T"/>
+                                <exclude reference="CDE-zf-g1e"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="303" y="418"/>
+        </scene>
+    </scenes>
+</document>
